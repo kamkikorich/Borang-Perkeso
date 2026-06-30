@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fail sementara / penyelidikan
+_tmp_*
+borang_page.html
+pdf_links.txt
+
+# Node (jika ditambah kemudian)
+node_modules/
+*.log

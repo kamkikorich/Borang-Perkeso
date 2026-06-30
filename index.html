@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pusat Muat Turun Borang PERKESO Keningau - Semua borang rasmi PERKESO tersusun mengikut kategori untuk kemudahan majikan, pekerja & orang awam.">
+    <title>Pusat Borang PERKESO Keningau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="brand">
+                <div class="brand-logo" aria-hidden="true">
+                    <span class="brand-mark">P</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">PERKESO Keningau</span>
+                    <span class="brand-sub">Pusat Muat Turun Borang</span>
+                </div>
+            </a>
+            <nav class="main-nav" aria-label="Navigasi utama">
+                <a href="#borang">Borang</a>
+                <a href="#carian" class="nav-cta">Cari Borang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Pertubuhan Keselamatan Sosial &bull; Sabah</p>
+                <h1>Pusat Muat Turun Borang <span class="hl">PERKESO</span></h1>
+                <p class="hero-lead">
+                    Semua borang rasmi PERKESO untuk pejabat Keningau — tersusun mengikut kategori.
+                    Muat turun terus dari pautan rasmi <strong>perkeso.gov.my</strong>.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num" id="statForms">0</span><span class="stat-label">Borang</span></div>
+                    <div class="stat"><span class="stat-num" id="statCats">0</span><span class="stat-label">Kategori</span></div>
+                    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Pautan Rasmi</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,80 L0,80 Z"></path></svg>
+        </div>
+    </section>
+
+    <!-- ============ CARIAN & PENAPIS ============ -->
+    <section class="search-section" id="carian">
+        <div class="container">
+            <div class="search-card">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="searchInput" placeholder="Cari borang... (cth: 34, SIP, dialisis, rayuan)" autocomplete="off">
+                    <button id="clearSearch" class="clear-btn" aria-label="Kosongkan carian">&times;</button>
+                </div>
+                <p class="search-hint" id="searchHint"></p>
+            </div>
+
+            <!-- Penapis kategori (chips) — dijana oleh JavaScript -->
+            <div class="filter-chips" id="filterChips" role="tablist" aria-label="Penapis kategori">
+                <!-- Dijana oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NAVIGASI KATEGORI ============ -->
+    <nav class="cat-nav" id="borang">
+        <div class="container cat-nav-inner" id="catNav">
+            <!-- Dijana oleh JavaScript -->
+        </div>
+    </nav>
+
+    <!-- ============ BORANG-BORANG ============ -->
+    <main class="container forms-container" id="formsRoot">
+        <!-- Dijana oleh JavaScript -->
+    </main>
+
+    <!-- ============ MAKLUMAT PEJABAT ============ -->
+    <section class="office-section" id="hubungi">
+        <div class="container office-grid">
+            <div class="office-card">
+                <div class="office-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <h3>Alamat</h3>
+                <p>Pejabat PERKESO Keningau<br>
+                Tingkat 1 &amp; 2, Lot 22, Blok B,<br>
+                ADIKA Commercial Complex,<br>
+                Peti Surat 704, 89008 Keningau, Sabah</p>
+            </div>
+            <div class="office-card">
+                <div class="office-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <h3>Hubungi</h3>
+                <p><strong>Telefon:</strong> <a href="tel:087332578">087-332 578</a><br>
+                <strong>Hotline:</strong> <a href="tel:1300228000">1-300-22-8000</a><br>
+                <strong>E-mel:</strong> <a href="mailto:pkskeningau@perkeso.gov.my">pkskeningau@perkeso.gov.my</a></p>
+            </div>
+            <div class="office-card">
+                <div class="office-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <h3>Jam Operasi</h3>
+                <p><strong>Isnin–Khamis:</strong> 8:00 pg – 5:00 ptg<br>
+                <strong>Jumaat:</strong> 8:00 pg – 12:15 tgh &amp; 2:45 – 5:00 ptg<br>
+                <strong>Sabtu–Ahad:</strong> Tutup</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <strong>PERKESO Keningau</strong>
+                <p>Pusat Muat Turun Borang Rasmi</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.perkeso.gov.my" target="_blank" rel="noopener">Laman PERKESO</a>
+                <a href="https://www.perkeso.gov.my/mengenai-kami/rujukan/borang-borang.html" target="_blank" rel="noopener">Borang Rasmi</a>
+                <a href="https://assist.perkeso.gov.my/employer/login" target="_blank" rel="noopener">Portal ASSIST</a>
+                <a href="https://www.facebook.com/PERKESOKENINGAU/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-disclaimer container">
+            <p>Pautan borang dipaut terus dari laman rasmi <strong>perkeso.gov.my</strong>. Laman ini disediakan untuk kemudahan muat turun borang. Untuk pengesahan terkini, sila rujuk portal rasmi PERKESO.</p>
+        </div>
+    </footer>
+
+    <!-- Butang kembali ke atas -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
