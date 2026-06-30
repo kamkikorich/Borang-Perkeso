@@ -2,24 +2,47 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Pusat Carian Borang PERKESO - Cari, tapis dan muat turun semua borang rasmi PERKESO mengikut kategori seperti pendaftaran, tuntutan, SIP, pekerja asing, SKSSR, SPS, rayuan dan bayaran balik.">
-    <title>Pusat Carian Borang PERKESO</title>
-    
-    <!-- Google Fonts: Plus Jakarta Sans for premium typography -->
+    <meta name="keywords" content="PERKESO, borang PERKESO, SOCSO forms, Borang 34, SIP, SKSSR, SPS, faedah PERKESO, Keningau, Sabah, download borang PERKESO">
+    <meta name="author" content="WajuTech">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#00529B">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ms_MY">
+    <meta property="og:site_name" content="Pusat Carian Borang PERKESO">
+    <meta property="og:title" content="Pusat Carian Borang PERKESO Keningau">
+    <meta property="og:description" content="Cari, tapis dan muat turun 88 borang rasmi PERKESO dalam 15 kategori — pautan terus dari perkeso.gov.my.">
+    <meta property="og:image" content="https://i.postimg.cc/ZY8Wq41s/Gemini-Generated-Image-4rl9bu4rl9bu4rl9.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pusat Carian Borang PERKESO Keningau">
+    <meta name="twitter:description" content="Cari, tapis dan muat turun 88 borang rasmi PERKESO dalam 15 kategori — pautan terus dari perkeso.gov.my.">
+
+    <title>Pusat Carian Borang PERKESO Keningau | Direktori 88 Borang Rasmi</title>
+
+    <!-- Preconnect Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+    <link rel="canonical" href="https://kamkikorich.github.io/Borang-Perkeso/">
 </head>
 <body>
+
+    <!-- Skip link untuk aksesibiliti papan kekunci -->
+    <a href="#main-content" class="skip-link">Langkau ke kandungan utama</a>
 
     <!-- ============ HEADER / NAVIGATION ============ -->
     <header class="site-header" id="top">
         <div class="container header-inner">
-            <a href="#top" class="brand">
+            <a href="#top" class="brand" aria-label="Pusat Carian Borang PERKESO - Halaman utama">
                 <div class="brand-logo" aria-hidden="true">
                     <span class="brand-mark">P</span>
                 </div>
@@ -32,7 +55,18 @@
                 <a href="#borang">Senarai Kategori</a>
                 <a href="#carian" class="nav-cta">Cari Borang</a>
             </nav>
+            <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobileNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
+        <!-- Mobile drawer menu -->
+        <nav id="mobileNav" class="mobile-nav" aria-label="Navigasi mudah alih" hidden>
+            <a href="#borang">Senarai Kategori</a>
+            <a href="#carian">Cari Borang</a>
+            <a href="#hubungi">Hubungi Pejabat</a>
+        </nav>
     </header>
 
     <!-- ============ HERO SECTION ============ -->
@@ -74,32 +108,42 @@
         <div class="container">
             <div class="search-card">
                 <div class="search-box">
-                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" id="searchInput" placeholder="Cari borang... (cth: Borang 34, SIP, dialisis, Pekerja Asing)" autocomplete="off">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="searchInput" placeholder="Cari borang..." autocomplete="off" aria-label="Cari borang PERKESO">
                     <button id="clearSearch" class="clear-btn" aria-label="Kosongkan carian">&times;</button>
                 </div>
-                <p class="search-hint" id="searchHint"></p>
+                <p class="search-hint" id="searchHint" aria-live="polite"></p>
             </div>
 
-            <!-- Penapis kategori (chips) — dijana oleh JavaScript -->
+            <!-- Penapis kategori (chips) -->
             <div class="filter-chips-wrapper">
                 <div class="filter-chips" id="filterChips" role="tablist" aria-label="Penapis kategori">
                     <!-- Dijana oleh JavaScript -->
                 </div>
+                <div class="scroll-hint" aria-hidden="true">‹ Skrol untuk lebih banyak kategori ›</div>
             </div>
         </div>
     </section>
 
-    <!-- ============ CATEGORY QUICK NAV ============ -->
-    <nav class="cat-nav" id="borang">
-        <div class="container cat-nav-inner" id="catNav">
-            <!-- Dijana oleh JavaScript -->
-        </div>
-    </nav>
+    <!-- ============ MAIN CONTENT (SIDEBAR + FORMS) ============ -->
+    <main id="main-content">
+        <div class="layout-split">
+            <!-- Sidebar kategori (desktop sahaja) -->
+            <aside class="cat-nav" id="borang" aria-label="Senarai kategori borang">
+                <div class="cat-nav-header">
+                    <span class="cat-nav-title">Kategori</span>
+                    <span class="cat-nav-count" id="catNavCount">0</span>
+                </div>
+                <div class="cat-nav-inner" id="catNav">
+                    <!-- Dijana oleh JavaScript -->
+                </div>
+            </aside>
 
-    <!-- ============ FORMS GRID DISPLAY ============ -->
-    <main class="container forms-container" id="formsRoot">
-        <!-- Dijana oleh JavaScript -->
+            <!-- Grid borang -->
+            <section class="forms-container" id="formsRoot" aria-live="polite">
+                <!-- Dijana oleh JavaScript -->
+            </section>
+        </div>
     </main>
 
     <!-- ============ INFO SECTION ============ -->
@@ -110,33 +154,33 @@
                 <p>Hubungi pejabat PERKESO terdekat atau layari saluran rasmi jika anda memerlukan bantuan lanjut mengenai caruman atau tuntutan.</p>
             </div>
             <div class="office-grid">
-                <div class="office-card">
+                <article class="office-card">
                     <div class="office-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     </div>
                     <h3>Pejabat PERKESO Keningau</h3>
                     <p>Tingkat 1 &amp; 2, Lot 22, Blok B,<br>
                     ADIKA Commercial Complex,<br>
                     Peti Surat 704, 89008 Keningau, Sabah</p>
-                </div>
-                <div class="office-card">
+                </article>
+                <article class="office-card">
                     <div class="office-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     </div>
                     <h3>Hubungi &amp; E-mel</h3>
                     <p><strong>Talian Am:</strong> <a href="tel:087332578">087-332 578</a><br>
                     <strong>Hotline Korporat:</strong> <a href="tel:1300228000">1-300-22-8000</a><br>
                     <strong>E-mel Rasmi:</strong> <a href="mailto:pkskeningau@perkeso.gov.my">pkskeningau@perkeso.gov.my</a></p>
-                </div>
-                <div class="office-card">
+                </article>
+                <article class="office-card">
                     <div class="office-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                     </div>
                     <h3>Jam Operasi Kaunter</h3>
                     <p><strong>Isnin–Khamis:</strong> 8:00 pg – 5:00 ptg<br>
                     <strong>Jumaat:</strong> 8:00 pg – 12:15 tgh &amp; 2:45 – 5:00 ptg<br>
                     <strong>Sabtu–Ahad &amp; Cuti Am:</strong> Tutup</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -156,7 +200,7 @@
                 </div>
                 <p class="footer-brand-desc">Repositori carian borang bersepadu untuk memudahkan pencarian borang rasmi di bawah Akta Keselamatan Sosial Pekerja dan Akta Sistem Insurans Pekerjaan.</p>
             </div>
-            
+
             <div class="footer-links-col">
                 <h3>Pautan Berguna</h3>
                 <div class="footer-links">
@@ -166,12 +210,12 @@
                     <a href="https://www.facebook.com/PERKESOKENINGAU/" target="_blank" rel="noopener">Facebook PERKESO Keningau</a>
                 </div>
             </div>
-            
+
             <div class="footer-dev-col">
                 <h3>Pembangun Sistem</h3>
                 <div class="dev-card">
                     <div class="dev-logo-wrap">
-                        <img src="https://i.postimg.cc/ZY8Wq41s/Gemini-Generated-Image-4rl9bu4rl9bu4rl9.png" alt="WajuTech Logo" class="dev-logo">
+                        <img src="https://i.postimg.cc/ZY8Wq41s/Gemini-Generated-Image-4rl9bu4rl9bu4rl9.png" alt="WajuTech Logo" class="dev-logo" loading="lazy">
                     </div>
                     <div class="dev-info">
                         <span class="dev-title">Dibangunkan oleh</span>
@@ -181,7 +225,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-disclaimer container">
             <p>Pautan borang yang dipaparkan adalah berdasarkan pautan muat turun rasmi daripada laman web PERKESO. Pengguna dinasihatkan menyemak keperluan dokumen dan prosedur semasa dengan pejabat PERKESO berhampiran atau saluran rasmi PERKESO sebelum mengemukakan permohonan.</p>
             <p class="copyright">&copy; 2026 Pusat Carian Borang PERKESO. Hak Cipta Terpelihara. Dibangunkan oleh <strong>WajuTech</strong>.</p>
@@ -189,9 +233,12 @@
     </footer>
 
     <!-- Button Back to Top -->
-    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
     </button>
+
+    <!-- Toast untuk notifikasi salin pautan -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>

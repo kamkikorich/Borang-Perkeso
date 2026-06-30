@@ -18,3 +18,10 @@ pdf_links.txt
 # Node (jika ditambah kemudian)
 node_modules/
 *.log
+
+# Runtime / tooling (bukan sebahagian kod)
+.claude/
+.playwright-mcp/
+
+# Screenshot verifikasi (tidak perlu dalam repo)
+screenshot-*.png
