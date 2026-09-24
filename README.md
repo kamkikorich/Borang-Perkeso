@@ -69,7 +69,3 @@ Laman web pusat muat turun borang-borang rasmi **PERKESO** untuk Pejabat Keninga
 ## ⚠️ Penafian
 
 Pautan borang dipaut terus dari laman rasmi **perkeso.gov.my**. Laman ini disediakan untuk kemudahan muat turun borang sahaja. Untuk pengesahan terkini, sila rujuk [portal rasmi PERKESO](https://www.perkeso.gov.my).
-
-## 🧪 Nota Ujian
-
-Seksyen ini untuk menguji PR-Agent review automatik. Boleh dibuang selepas ujian.
