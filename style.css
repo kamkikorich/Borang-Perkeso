@@ -452,7 +452,7 @@ mark {
     padding: 14px 12px;
     font-size: 16px;
     font-weight: 500;
-    color: var(--ink);
+    color: #000000; /* hitam jelas — elak auto-dark Chrome balik-balik warna */
     font-family: inherit;
     outline: none;
 }
@@ -1401,4 +1401,11 @@ mark {
     .badge-checklist { background: #172554; color: #93C5FD; }
     .badge-guide     { background: #3B0764; color: #D8B4FE; }
     .badge-ref       { background: #022C22; color: #6EE7B7; }
+    /* Input carian: background putih tetap supaya teks hitam kekal jelas */
+    .search-box {
+        background: #FFFFFF;
+        border-color: var(--border);
+    }
+    #searchInput { color: #000000; }
+    #searchInput::placeholder { color: #64748B; }
 }
