@@ -1,0 +1,33 @@
+name: PR Agent
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: write
+
+jobs:
+  pr_agent_job:
+    # Jangan trigger pada komen daripada bot (elak gelung)
+    if: ${{ github.event.sender.type != 'Bot' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    name: Run pr agent on every pull request
+    steps:
+      - name: PR Agent action step
+        id: pragent
+        uses: qodo-ai/pr-agent@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # LLM: Ollama Cloud (OpenAI-compatible endpoint) — kos $0
+          OPENAI_API_BASE: https://ollama.com/v1
+          OPENAI_KEY: ${{ secrets.OLLAMA_CLOUD_KEY }}
+          # Tools automatik pada setiap PR baru
+          GITHUB_ACTION_CONFIG.AUTO_REVIEW: "true"
+          GITHUB_ACTION_CONFIG.AUTO_DESCRIBE: "true"
+          GITHUB_ACTION_CONFIG.AUTO_IMPROVE: "false" # panggil manual dengan /improve dalam komen PR

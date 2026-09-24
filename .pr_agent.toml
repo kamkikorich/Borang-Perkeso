@@ -1,0 +1,25 @@
+# Konfigurasi PR-Agent untuk repo ini
+# Dokumentasi: https://qodo-merge-docs.qodo.ai/usage-guide/configuration_options.html
+
+[config]
+# Model melalui Ollama Cloud (endpoint OpenAI-compatible) — lihat workflow secrets
+model = "openai/qwen3.5:397b"
+fallback_models = ["openai/glm-5.3"]
+git_provider = "github"
+publish_output = true
+# Komen /review /improve /describe /ask boleh digunakan dalam PR
+
+[pr_reviewer]
+# Semakan dalam BM ringkas + istilah teknikal English
+extra_instructions = """\
+Jawab dalam Bahasa Malaysia (kekal istilah teknikal dalam English). \
+Fokus pada: bug sebenar, keselamatan, dan kesilapan logik. \
+Jangan korek isu gaya minor.\
+"""
+require_score_review = true
+require_security_review = true
+require_tests_review = false # repo statik HTML/JS — tiada test suite
+
+[pr_description]
+publish_labels = false
+add_original_user_description = false
