@@ -11,11 +11,7 @@ response_language = "ms-MY"
 git_provider = "github"
 publish_output = true
 # Komen /review /improve /describe /ask boleh digunakan dalam PR
-
-[github_action_config]
-# Review semula secara automatik setiap kali commit baru didorong ke PR
-handle_push_trigger = true
-push_commands = ["review"]
+# Nota: trigger push/re-review dikawal dalam workflow env (GITHUB_ACTION_CONFIG.*)
 
 [pr_reviewer]
 # Semakan dalam BM ringkas + istilah teknikal English
