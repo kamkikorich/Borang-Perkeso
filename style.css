@@ -816,7 +816,7 @@ mark {
 .badge-ref       { background: #ECFDF5; color: #047857; }
 
 .badge-subcat {
-    background: #F1F5F9;
+    background: var(--bg-soft);
     color: var(--ink-soft);
     border: 1px solid var(--border);
     text-transform: none;
@@ -1396,4 +1396,9 @@ mark {
     .form-card-actions .btn-secondary:hover {
         background: var(--bg-soft);
     }
+    /* Badge jenis dokumen: varian dark mode (background gelap, teks terang) */
+    .badge-pdf       { background: #4C0519; color: #FDA4AF; }
+    .badge-checklist { background: #172554; color: #93C5FD; }
+    .badge-guide     { background: #3B0764; color: #D8B4FE; }
+    .badge-ref       { background: #022C22; color: #6EE7B7; }
 }
