@@ -2,7 +2,7 @@
 
 Laman web pusat muat turun borang-borang rasmi **PERKESO** untuk Pejabat Keningau, Sabah. Semua borang disusun mengikut kategori dengan pautan terus ke laman rasmi [perkeso.gov.my](https://www.perkeso.gov.my).
 
-![Kategori](https://img.shields.io/badge/Kategori-15-blue) ![Borang](https://img.shields.io/badge/Borang-88-green) ![Pautan](https://img.shields.io/badge/Pautan-100%25%20Rasmi-yellow)
+![Kategori](https://img.shields.io/badge/Kategori-15-blue) ![Borang](https://img.shields.io/badge/Borang-89-green) ![Pautan](https://img.shields.io/badge/Pautan-100%25%20Rasmi-yellow)
 
 ## ✨ Ciri-ciri
 
@@ -23,13 +23,13 @@ Laman web pusat muat turun borang-borang rasmi **PERKESO** untuk Pejabat Keninga
 └── README.md
 ```
 
-## 📊 Kandungan (15 Kategori, 88 Borang)
+## 📊 Kandungan (15 Kategori, 89 Borang)
 
 | # | Kategori | Borang |
 |---|----------|--------|
 | 1 | Pendaftaran Majikan & Pekerja | 11 |
 | 2 | Tuntutan Faedah (Akta 4) | 7 |
-| 3 | Perakuan 117 (Akta 4) | 12 |
+| 3 | Perakuan 117 (Akta 4) | 13 |
 | 4 | Perakuan Anak Belajar | 3 |
 | 5 | Laporan Perubatan | 5 |
 | 6 | Bayaran Ganti Belanja | 4 |

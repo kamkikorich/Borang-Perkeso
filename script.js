@@ -60,7 +60,8 @@ const CATEGORIES = [
             { "name": "Akuan Oleh Adik-Beradik - Pencen Penakat", "subcategory": "Peraturan 117", "type": "pdf", "url": "https://www.perkeso.gov.my/images/borang/2025_akuan/Act4_akuan117/AKUAN%20OLEH%20ADIK-BERADIK%20BAGI%20FAEDAH%20PENCEN%20PENAKAT%20%28Peraturan%20117%29.pdf" },
             { "name": "Akuan Oleh Adik-Beradik - Faedah Orang Tanggungan", "subcategory": "Peraturan 117", "type": "pdf", "url": "https://www.perkeso.gov.my/images/borang/2025_akuan/Act4_akuan117/AKUAN%20OLEH%20ADIK-BERADIK%20BAGI%20FAEDAH%20ORANG%20TANGGUNGAN%20%28Peraturan%20117%29.pdf" },
             { "name": "Akuan Bagi Pencen Ilat", "subcategory": "Peraturan 117", "type": "pdf", "url": "https://www.perkeso.gov.my/images/borang2017/Borang_Faedah/perakuan117_2018/Akuan_Bagi_Pencen_Ilat.pdf" },
-            { "name": "Akuan Bagi Faedah Hilang Upaya Kekal", "subcategory": "Peraturan 117", "type": "pdf", "url": "https://www.perkeso.gov.my/images/borang2017/Borang_Faedah/perakuan117_2018/Akuan_Bagi_Faedah_Hilang_Upaya_Kekal.pdf" }
+            { "name": "Akuan Bagi Faedah Hilang Upaya Kekal", "subcategory": "Peraturan 117", "type": "pdf", "url": "https://www.perkeso.gov.my/images/borang2017/Borang_Faedah/perakuan117_2018/Akuan_Bagi_Faedah_Hilang_Upaya_Kekal.pdf" },
+            { "name": "Akuan Balu Beragama Islam - FOT / Pencen Penakat (Lampiran A)", "subcategory": "Akuan Balu Islam", "type": "pdf", "url": "borang/Akuan_Balu_Beragama_Islam_FOT_Penakat_LampiranA.pdf" }
         ]
     },
     {
