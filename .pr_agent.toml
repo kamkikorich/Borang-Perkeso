@@ -8,11 +8,14 @@ fallback_models = ["openai/glm-5.3"]
 # PR-Agent tak kenal model custom — nyatakan saiz context window secara eksplisit
 custom_model_max_tokens = 32000
 response_language = "ms-MY"
-# Review semula secara automatik setiap kali commit baru didorong ke PR
-handle_push_trigger = true
 git_provider = "github"
 publish_output = true
 # Komen /review /improve /describe /ask boleh digunakan dalam PR
+
+[github_action_config]
+# Review semula secara automatik setiap kali commit baru didorong ke PR
+handle_push_trigger = true
+push_commands = ["review"]
 
 [pr_reviewer]
 # Semakan dalam BM ringkas + istilah teknikal English
