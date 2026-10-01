@@ -66,6 +66,12 @@ Laman web pusat muat turun borang-borang rasmi **PERKESO** untuk Pejabat Keninga
 - **E-mel:** pkskeningau@perkeso.gov.my
 - **Jam Operasi:** Isnin–Khamis 8:00 pg – 5:00 ptg | Jumaat 8:00 pg – 12:15 tgh & 2:45 – 5:00 ptg
 
+
+## 🔒 Nota Keselamatan
+
+- Semua pautan borang menggunakan HTTPS.
+- Tiada data pengguna dikumpul oleh laman ini (fail statik sepenuhnya).
+
 ## ⚠️ Penafian
 
 Pautan borang dipaut terus dari laman rasmi **perkeso.gov.my**. Laman ini disediakan untuk kemudahan muat turun borang sahaja. Untuk pengesahan terkini, sila rujuk [portal rasmi PERKESO](https://www.perkeso.gov.my).
